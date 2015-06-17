@@ -7,7 +7,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build -t gusohal/circlecitest
+    - docker build -t gusohal/circlecitest .
     - bundle install
 
 
