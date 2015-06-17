@@ -11,8 +11,6 @@ dependencies:
     - docker info
     - docker build -t gusohal/circlecitest .
     - ls
-    - cd ..
-    - ls
     - bundle install
 
 test:
