@@ -7,10 +7,9 @@ dependencies:
     - "~/.cache/docker"
   override:
     - docker info
-    - docker build -t gusohal/circlecitest .
-    - ls
+    - docker build -t gusohal/meteor:latest .
     - bundle install
 
 test:
   override:
-    - bundle exec rspec spec/Dockerfile_spec.rb
+    - bundle exec rake spec:meteor
