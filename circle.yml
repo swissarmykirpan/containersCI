@@ -4,13 +4,14 @@ machine:
   services:
     - docker
 
-dependencies:
-  override:
-    - docker info
-    - docker build -t gusohal/circlecitest .
-    - bundle install
-
+# dependencies:
+#   cache_directories:
+#     - "~/.cache/docker"
+#   override:
+#     - docker info
+#     - docker build -t gusohal/circlecitest .
+#     - bundle install
 
 test:
   override:
-    - bundle exec rspec
+    - rspec
