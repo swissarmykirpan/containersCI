@@ -9,7 +9,3 @@ dependencies:
     - docker info
     - docker build -t gusohal/meteor:latest .
     - bundle install
-
-test:
-  override:
-    - bundle exec rake spec:meteor
