@@ -1,8 +1,14 @@
 machine:
   ruby:
-    version: rbx-2.2.6
+    version: 2.1.5
   services:
     - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker build -t gusohal/circlecitest
+    - bundle install
 
 
 test:
