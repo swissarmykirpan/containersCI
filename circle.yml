@@ -13,4 +13,4 @@ dependencies:
 
 test:
   override:
-    - rspec spec/Dockerfile_spec.rb
+    - bundle exec rspec spec/Dockerfile_spec.rb
