@@ -9,3 +9,4 @@ gem "sequel"
 gem "sqlite3"
 gem "text-table"
 gem "rspec"
+gem 'coveralls', require: false

@@ -1,5 +1,9 @@
 require 'serverspec'
 require 'docker'
+require 'coveralls'
+
+## Code Coverage
+Coveralls.wear!
 
 ## workaround for Circle CI
 ## docker rm (removing btrfs snapshot) fails on Circle CI
