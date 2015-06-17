@@ -1,0 +1,14 @@
+machine:
+  ruby:
+    version: rbx-2.2.6
+  services:
+    - docker
+
+# dependencies:
+#   override:
+#     - sudo pip install --upgrade docker-compose
+#     - bundle install
+
+test:
+  override:
+    - rspec
