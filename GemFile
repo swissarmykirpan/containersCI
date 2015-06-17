@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
-gem "rspec"
-gem "serverspec"
 gem "docker-api", :require => "docker"
+gem "serverspec"
+gem "specinfra", "2.12.7"
+gem "rspec"
