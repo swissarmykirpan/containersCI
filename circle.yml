@@ -11,4 +11,4 @@ machine:
 
 test:
   override:
-    - rake spec
+    - rspec
