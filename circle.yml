@@ -7,7 +7,7 @@ dependencies:
     - "~/.cache/docker"
   override:
     - docker info
-    - docker build -t gusohal/meteor:latest .
+    - docker build -t gusohal/containersci:latest .
     - bundle install
 
 
