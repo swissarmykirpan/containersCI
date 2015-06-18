@@ -9,3 +9,10 @@ dependencies:
     - docker info
     - docker build -t gusohal/meteor:latest .
     - bundle install
+
+
+deployment:
+  dockerhub:
+    branch: master
+    commands:
+      - $TRIGGER_DOCKER_HUB_BUILD
