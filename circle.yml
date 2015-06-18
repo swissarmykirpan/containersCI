@@ -7,7 +7,7 @@ dependencies:
     - "~/.cache/docker"
   override:
     - docker info
-    - docker build -t gusohal/meteor:latest .
+    - docker build -t gusohal/meteor .
     - bundle install
 
 
@@ -15,4 +15,5 @@ deployment:
   dockerhub:
     branch: master
     commands:
-      - $TRIGGER_DOCKER_HUB_BUILD
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker push gusohal/meteor
